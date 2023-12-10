@@ -1,15 +1,8 @@
 return {
-
-
-	-- Mason
 	{
-		"williamboman/mason.nvim",
+		'williamboman/mason.nvim',
 		config = true,
 		dependencies = {
-			-- LSP Support
-			"williamboman/mason-lspconfig.nvim",
-			"neovim/nvim-lspconfig",
-
 			-- Autocompletion
 			'hrsh7th/nvim-cmp',
 			'hrsh7th/cmp-nvim-lsp',
@@ -22,5 +15,6 @@ return {
 			'rafamadriz/friendly-snippets',
 		},
 	},
+	"williamboman/mason-lspconfig.nvim",
+	"neovim/nvim-lspconfig",
 }
-
