@@ -9,14 +9,16 @@ return {
 		"3rd/image.nvim",
 	},
 	keys = {
-		{ "<leader>e",  "<CMD>Neotree<CR>",            desc = "File explorer" },
-		{ "<leader>gs", "<CMD>Neotree git_status<CR>", desc = "Git status explorer" },
+		{ "<leader>e", "<CMD>Neotree<CR>", desc = "File explorer" },
 	},
 	opts = {
 		filesystem = {
 			follow_current_file = {
 				enabled = true
 			}
+		},
+		window = {
+			width = 47,
 		}
 	}
 }
