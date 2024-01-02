@@ -9,7 +9,7 @@ return {
 		"3rd/image.nvim",
 	},
 	keys = {
-		{ "<leader>e", "<CMD>Neotree<CR>", desc = "File explorer" },
+		{ "<leader>e", "<CMD>Neotree<CR>", desc = "[e]xplorer" },
 	},
 	opts = {
 		filesystem = {

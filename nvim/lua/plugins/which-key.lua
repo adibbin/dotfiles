@@ -13,8 +13,9 @@ return {
 	opts = {
 		defaults = {
 			mode = { "n", "v" },
+			["<leader>g"] = { name = "+git or +goto " },
+			["<leader>r"] = { name = "+refactor" },
 			["<leader>s"] = { name = "+search" },
-			["<leader>g"] = { name = "+git" },
 		},
 	},
 }
