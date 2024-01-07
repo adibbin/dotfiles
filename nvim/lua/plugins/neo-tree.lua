@@ -18,7 +18,7 @@ return {
 			}
 		},
 		window = {
-			width = 37,
+			width = 47,
 		}
 	}
 }
