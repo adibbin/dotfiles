@@ -36,6 +36,12 @@ return {
 				'node_modules',
 				'redoc.standalone.js'
 			},
+		},
+		pickers = {
+			buffers = {
+				sort_lastused = true,
+				sort_mru = true,
+			},
 		}
 	}
 }
