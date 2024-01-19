@@ -1,3 +1,7 @@
+local function format()
+	require("conform").format({ async = true, lsp_fallback = true })
+end
+
 local M = {}
 
 M.on_attach = function(_, bufnr)
@@ -23,6 +27,10 @@ M.on_attach = function(_, bufnr)
 	nmap('K', vim.lsp.buf.hover, 'Hover Documentation')
 	nmap('<C-k>', vim.lsp.buf.signature_help, 'Signature Documentation')
 
+	-- Formatting
+	nmap('<leader>f', format, '[f]ormat')
+	vim.api.nvim_buf_create_user_command(bufnr, 'Format', format, { desc = 'Format' })
+
 	-- Lesser used LSP functionality
 	nmap('gD', vim.lsp.buf.declaration, '[G]oto [D]eclaration')
 	nmap('<leader>wa', vim.lsp.buf.add_workspace_folder, '[W]orkspace [A]dd Folder')
@@ -30,13 +38,6 @@ M.on_attach = function(_, bufnr)
 	nmap('<leader>wl', function()
 		print(vim.inspect(vim.lsp.buf.list_workspace_folders()))
 	end, '[W]orkspace [L]ist Folders')
-
-	nmap('<leader>f', vim.lsp.buf.format, '[f]ormat')
-
-	-- Create a command `:Format` local to the LSP buffer
-	vim.api.nvim_buf_create_user_command(bufnr, 'Format', function(_)
-		vim.lsp.buf.format()
-	end, { desc = 'Format current buffer with LSP' })
 end
 
 return M
