@@ -1,25 +1,35 @@
 return {
-	"nvim-treesitter/nvim-treesitter",
-	config = function(_, opts)
-		require("nvim-treesitter.configs").setup(opts)
-	end,
-	opts = {
-		ensure_installed = {
-			'elixir',
-			'go',
-			'heex',
-			'javascript',
-			'lua',
-			'python',
-			'tsx',
-			'typescript',
+	{
+		"nvim-treesitter/nvim-treesitter",
+		config = function(_, opts)
+			require("nvim-treesitter.configs").setup(opts)
+		end,
+		dependencies = {
+			"nvim-treesitter/nvim-treesitter-context",
 		},
-		highlight = {
-			enable = true,
-			use_languagetree = true,
-		},
-		indent = {
-			enable = true
-		},
-	}
+		opts = {
+			ensure_installed = {
+				'c',
+				'elixir',
+				'go',
+				'heex',
+				'javascript',
+				'lua',
+				'python',
+				'query',
+				'tsx',
+				'typescript',
+				'vim',
+				'vimdoc',
+			},
+			highlight = {
+				enable = true,
+				use_languagetree = true,
+			},
+			indent = {
+				enable = true
+			},
+		}
+	},
+
 }
