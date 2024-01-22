@@ -1,15 +1,23 @@
-local opt = vim.opt
+local options = {
+	clipboard = "unnamedplus",
+	cursorline = true,
+	mouse = "a",
+	scrolloff = 8,
+	showmode = false,
+	swapfile = false,
+	termguicolors = true,
 
-opt.clipboard = "unnamedplus"
-opt.cursorline = true
-opt.scrolloff = 8
-opt.termguicolors = true
+	-- Indenting
+	autoindent = true,
+	shiftwidth = 2,
+	smartindent = true,
+	tabstop = 2,
 
--- Indenting
-opt.tabstop = 2
-opt.autoindent = true
-opt.smartindent = true
+	-- Numbers
+	number = true,
+	relativenumber = true,
+}
 
--- Numbers
-opt.number = true
-opt.relativenumber = true
+for k, v in pairs(options) do
+	vim.opt[k] = v
+end
