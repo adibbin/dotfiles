@@ -15,6 +15,8 @@ return {
 				'heex',
 				'javascript',
 				'lua',
+				'markdown',
+				'markdown_inline',
 				'python',
 				'query',
 				'tsx',
