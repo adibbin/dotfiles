@@ -1,3 +1,4 @@
 # dotfiles
 
-1. `stow .`
+1. `./init.sh`
+2. `stow .`
