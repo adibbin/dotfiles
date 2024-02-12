@@ -12,15 +12,6 @@ install_xcode_cli_tools() {
     fi
 }
 
-# install_homebrew() {
-#     if command -v brew &>/dev/null; then
-#         echo "Homebrew already installed."
-#     else
-# 				echo "Homebrew not found - installing..."
-# 				/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-#     fi
-# }
-
 main() {
     install_xcode_cli_tools
     install_homebrew
