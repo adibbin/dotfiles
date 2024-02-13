@@ -1,4 +1,5 @@
 formulas=(
+	awscli
 	direnv
 	neovim
 	node 
