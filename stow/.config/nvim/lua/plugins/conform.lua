@@ -7,6 +7,7 @@ return {
 	opts = {
 		formatters_by_ft = {
 			lua = { "stylelua" },
+			python = { "ruff_format" },
 			typescript = { { "prettierd", "prettier" } },
 		},
 	}

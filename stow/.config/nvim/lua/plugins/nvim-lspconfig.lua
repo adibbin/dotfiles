@@ -19,6 +19,7 @@ return {
 					telemetry = { enable = false },
 				},
 			},
+			ruff_lsp = {},
 			tsserver = {},
 		}
 

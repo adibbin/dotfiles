@@ -4,6 +4,7 @@ formulas=(
 	neovim
 	node 
 	ripgrep
+	ruff
 	stow
 	yarn
 	zsh-syntax-highlighting
