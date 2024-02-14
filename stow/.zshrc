@@ -9,6 +9,7 @@ export EDITOR='nvim'
 source $ZSH/oh-my-zsh.sh
 
 # Aliases
+alias kittyconfig="nvim ~/.config/kitty/kitty.conf"
 alias zshconfig="nvim ~/.zshrc"
 alias ohmyzsh="nvim ~/.oh-my-zsh"
 
