@@ -14,8 +14,7 @@ install_xcode_cli_tools() {
 
 main() {
     install_xcode_cli_tools
-    install_homebrew
-		install_brew_formulas
+		setup_homebrew
 }
 
 # Execute main function
