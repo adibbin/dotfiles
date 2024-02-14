@@ -8,6 +8,7 @@ return {
 		formatters_by_ft = {
 			lua = { "stylelua" },
 			python = { "ruff_format" },
+			sh = { "shfmt" },
 			typescript = { { "prettierd", "prettier" } },
 		},
 	}

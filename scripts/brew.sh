@@ -2,9 +2,10 @@ formulas=(
 	awscli
 	direnv
 	neovim
-	node 
+	node
 	ripgrep
 	ruff
+	shfmt
 	stow
 	yarn
 	zsh-syntax-highlighting
@@ -32,36 +33,36 @@ install_homebrew() {
 }
 
 install_brew_formulas() {
-		for formula in "${formulas[@]}"; do
-			if brew list "$formula" &>/dev/null; then
-				echo "$formula already installed."
-			else
-				echo "Installing $formula..."
-					brew install "$formula"
-			fi
-		done
+	for formula in "${formulas[@]}"; do
+		if brew list "$formula" &>/dev/null; then
+			echo "$formula already installed."
+		else
+			echo "Installing $formula..."
+			brew install "$formula"
+		fi
+	done
 }
 
 install_brew_taps() {
-		for tap in "${taps[@]}"; do
-			if brew tap | grep -q "$tap"; then
-				echo "$tap already tapped."
-			else
-				echo "Tapping $tap..."
-				brew tap "$tap"
-			fi
-		done
+	for tap in "${taps[@]}"; do
+		if brew tap | grep -q "$tap"; then
+			echo "$tap already tapped."
+		else
+			echo "Tapping $tap..."
+			brew tap "$tap"
+		fi
+	done
 }
 
 install_brew_casks() {
-		for cask in "${casks[@]}"; do
-			if brew list --cask "$cask" &>/dev/null; then
-				echo "$cask already installed."
-			else
-				echo "Installing $cask..."
-				brew install --cask "$cask"
-			fi
-		done
+	for cask in "${casks[@]}"; do
+		if brew list --cask "$cask" &>/dev/null; then
+			echo "$cask already installed."
+		else
+			echo "Installing $cask..."
+			brew install --cask "$cask"
+		fi
+	done
 }
 
 setup_homebrew() {
