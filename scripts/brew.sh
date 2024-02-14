@@ -16,6 +16,10 @@ taps=(
 
 casks=(
 	font-jetbrains-mono
+	obsidian
+	spotify
+	visual-studio-code
+	zed
 )
 
 install_homebrew() {
