@@ -1,0 +1,32 @@
+setup_dock() {
+	defaults write com.apple.dock magnification -bool false
+	defaults write com.apple.dock mineffect -string "genie"
+	defaults write com.apple.dock minimize-to-application -bool true
+	defaults write com.apple.dock tilesize -int 32
+}
+
+setup_finder() {
+	# Keep folders on top
+	defaults write com.apple.finder _FXSortFoldersFirst -bool true
+
+	# List view
+	defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
+
+	# Show path bar
+	defaults write com.apple.finder ShowPathbar -bool true
+
+	# Show status bar
+	defaults write com.apple.finder ShowStatusBar -bool true
+}
+
+restart() {
+	killall Dock
+	killall Finder
+}
+
+setup_macOS() {
+	setup_dock
+	setup_finder
+
+	restart
+}
