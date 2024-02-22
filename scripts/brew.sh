@@ -1,6 +1,7 @@
 formulas=(
 	awscli
 	direnv
+	fnm
 	neovim
 	node
 	ripgrep
@@ -71,3 +72,5 @@ setup_homebrew() {
 	install_brew_taps
 	install_brew_casks
 }
+
+setup_homebrew
