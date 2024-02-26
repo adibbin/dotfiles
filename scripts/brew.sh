@@ -17,6 +17,7 @@ taps=(
 )
 
 casks=(
+	docker
 	font-jetbrains-mono
 	obsidian
 	spotify
