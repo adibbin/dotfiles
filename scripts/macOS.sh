@@ -30,3 +30,5 @@ setup_macOS() {
 
 	restart
 }
+
+setup_macOS
