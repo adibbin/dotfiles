@@ -1,7 +1,4 @@
-#! /bin/zsh
-
-. scripts/brew.sh
-. scripts/macOS.sh
+#!/bin/bash
 
 install_xcode_cli_tools() {
 	if xcode-select -p &>/dev/null; then
@@ -13,11 +10,5 @@ install_xcode_cli_tools() {
 	fi
 }
 
-main() {
-	install_xcode_cli_tools
-	setup_homebrew
-	setup_macOS
-}
+install_xcode_cli_tools
 
-# Execute main function
-main
