@@ -9,6 +9,7 @@ return {
 		require('mason-lspconfig').setup()
 
 		local servers = {
+			bashls = {},
 			elixirls = {},
 			lua_ls = {
 				Lua = {
