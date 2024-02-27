@@ -22,7 +22,9 @@ return {
 		{ '<leader>sf',      '<cmd>Telescope find_files<cr>',  desc = '[s]earch [f]iles' },
 		{ '<leader>sg',      '<cmd>Telescope live_grep<cr>',   desc = '[s]earch [g]rep' },
 		{ '<leader>sh',      '<cmd>Telescope help_tags<cr>',   desc = '[s]earch [h]elp' },
+		{ '<leader>sk',      '<cmd>Telescope keymaps<cr>',     desc = '[s]earch [k]eymaps' },
 		{ '<leader>so',      '<cmd>Telescope oldfiles<cr>',    desc = '[s]earch [o]ld files' },
+		{ '<leader>sr',      '<cmd>Telescope resume<cr>',      desc = '[s]earch [r]esume' },
 
 		-- Git
 		{ '<leader>gc',      '<cmd>Telescope git_commits<cr>', desc = '[g]it [c]ommits' },
