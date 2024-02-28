@@ -1,5 +1,6 @@
 local options = {
 	clipboard = "unnamedplus",
+	conceallevel = 1,
 	cursorline = true,
 	mouse = "a",
 	scrolloff = 8,
