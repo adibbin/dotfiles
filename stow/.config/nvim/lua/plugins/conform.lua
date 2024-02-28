@@ -1,3 +1,5 @@
+local prettier = { "prettierd", "prettier" }
+
 return {
 	"stevearc/conform.nvim",
 	cmd = "ConformInfo",
@@ -10,10 +12,12 @@ return {
 			lsp_fallback = true,
 		},
 		formatters_by_ft = {
+			javascript = { prettier },
 			lua = { "stylelua" },
+			markdown = { prettier, "injected" },
 			python = { "ruff_format" },
 			sh = { "shfmt" },
-			typescript = { { "prettierd", "prettier" } },
+			typescript = { prettier },
 		},
 	}
 }
