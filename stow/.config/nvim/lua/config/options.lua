@@ -7,6 +7,7 @@ local options = {
 	showmode = false,
 	swapfile = false,
 	termguicolors = true,
+	textwidth = 80,
 
 	-- Indenting
 	autoindent = true,
