@@ -9,9 +9,9 @@ export EDITOR='nvim'
 source $ZSH/oh-my-zsh.sh
 
 # Aliases
-alias kittyconfig="nvim ~/.config/kitty/kitty.conf"
+alias dot="cd ~/dotfiles && nvim"
+alias reload="source ~/.zshrc"
 alias zshconfig="nvim ~/.zshrc"
-alias ohmyzsh="nvim ~/.oh-my-zsh"
 
 # ZSH syntax highlighting 
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
