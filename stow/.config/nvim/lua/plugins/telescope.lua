@@ -20,7 +20,7 @@ return {
 
 		-- Search
 		{ '<leader>sf',      '<cmd>Telescope find_files<cr>',  desc = '[s]earch [f]iles' },
-		{ '<leader>sg',      '<cmd>Telescope live_grep<cr>',   desc = '[s]earch [g]rep' },
+		{ '<leader><S-f>',   '<cmd>Telescope live_grep<cr>',   desc = 'search all [f]iles (grep)' },
 		{ '<leader>sh',      '<cmd>Telescope help_tags<cr>',   desc = '[s]earch [h]elp' },
 		{ '<leader>sk',      '<cmd>Telescope keymaps<cr>',     desc = '[s]earch [k]eymaps' },
 		{ '<leader>so',      '<cmd>Telescope oldfiles<cr>',    desc = '[s]earch [o]ld files' },
