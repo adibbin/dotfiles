@@ -9,7 +9,7 @@ return {
 		"3rd/image.nvim",
 	},
 	keys = {
-		{ "<leader>e", "<CMD>Neotree<CR>", desc = "[e]xplorer" },
+		{ "<leader>b", "<CMD>Neotree toggle<CR>" },
 	},
 	opts = {
 		filesystem = {
@@ -17,8 +17,5 @@ return {
 				enabled = true
 			}
 		},
-		window = {
-			width = 47,
-		}
 	}
 }
