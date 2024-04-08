@@ -18,6 +18,10 @@ local options = {
 	-- Numbers
 	number = true,
 	relativenumber = true,
+
+	-- Split
+	splitbelow = true,
+	splitright = true,
 }
 
 for k, v in pairs(options) do
