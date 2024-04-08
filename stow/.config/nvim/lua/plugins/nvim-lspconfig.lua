@@ -6,8 +6,6 @@ return {
 		'WhoIsSethDaniel/mason-tool-installer.nvim',
 	},
 	config = function()
-		require('mason-lspconfig').setup()
-
 		vim.api.nvim_create_autocmd('LspAttach', {
 			callback = function(event)
 				local map = function(keys, func, desc)
