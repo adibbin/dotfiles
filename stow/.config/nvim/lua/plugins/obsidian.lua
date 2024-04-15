@@ -7,8 +7,12 @@ return {
 		disable_frontmatter = true,
 		workspaces = {
 			{
-				name = "obsidian",
-				path = "~/My Drive/Obsidian",
+				name = "acast",
+				path = "~/My Drive/obsidian-vaults/acast",
+			},
+			{
+				name = "private",
+				path = "~/My Drive/obsidian-vaults/private",
 			}
 		}
 	}
