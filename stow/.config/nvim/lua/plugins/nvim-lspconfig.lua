@@ -28,7 +28,7 @@ return {
 		local capabilities = vim.lsp.protocol.make_client_capabilities()
 		capabilities = vim.tbl_deep_extend('force', capabilities, require('cmp_nvim_lsp').default_capabilities())
 
-		local servers = {
+		local lsps = {
 			bashls = {},
 			elixirls = {},
 			lua_ls = {
@@ -44,12 +44,19 @@ return {
 			tsserver = {},
 		}
 
+		local formatters = {
+			'prettier',
+			'prettierd',
+		}
+
+		local ensure_installed = vim.list_extend(lsps, formatters)
+
 		require('mason').setup()
-		require('mason-tool-installer').setup { ensure_installed = servers }
+		require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 		require('mason-lspconfig').setup {
 			handlers = {
 				function(server_name)
-					local server = servers[server_name] or {}
+					local server = lsps[server_name] or {}
 					server.capabilities = vim.tbl_deep_extend('force', {}, capabilities, server.capabilities or {})
 					require('lspconfig')[server_name].setup(server)
 				end,
