@@ -31,6 +31,7 @@ return {
 		local lsps = {
 			bashls = {},
 			elixirls = {},
+			eslint = {},
 			lua_ls = {
 				Lua = {
 					diagnostics = {
@@ -49,7 +50,8 @@ return {
 			'prettierd',
 		}
 
-		local ensure_installed = vim.list_extend(lsps, formatters)
+		local ensure_installed = vim.tbl_keys(lsps)
+		vim.list_extend(ensure_installed, formatters)
 
 		require('mason').setup()
 		require('mason-tool-installer').setup { ensure_installed = ensure_installed }
