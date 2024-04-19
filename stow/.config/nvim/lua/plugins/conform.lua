@@ -15,11 +15,12 @@ return {
 	},
 	opts = {
 		format_on_save = {
-			timeout_ms = 500,
 			lsp_fallback = true,
+			timeout_ms = 500,
 		},
 		formatters_by_ft = {
 			javascript = { prettier },
+			json = { prettier },
 			lua = { "stylelua" },
 			markdown = { prettier, "injected" },
 			python = { "ruff_format" },
