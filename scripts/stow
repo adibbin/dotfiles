@@ -1,0 +1,14 @@
+#!/bin/bash
+
+STOW_DIR="$HOME/dotfiles/stow"
+
+if cd "$STOW_DIR"; then
+    echo "Changed to directory $STOW_DIR"
+else
+    echo "Directory $STOW_DIR does not exist."
+    exit 1
+fi
+
+stow .
+
+echo "Stowed complete ✅"

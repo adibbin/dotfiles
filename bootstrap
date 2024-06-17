@@ -1,10 +1,10 @@
 #!/bin/bash
 
 main() {
-	.	scripts/xcode_cli_tools
+	. scripts/xcode_cli_tools
 	. scripts/brew
 	. scripts/macOS
+	. scripts/stow
 }
 
-# Execute main function
 main
