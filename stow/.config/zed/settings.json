@@ -1,0 +1,28 @@
+{
+  // Editor
+  "autosave": {
+    "after_delay": {
+      "milliseconds": 500
+    }
+  },
+  "inlay_hints": {
+    "enabled": true
+  },
+  "relative_line_numbers": true,
+  "vim_mode": true,
+
+  // Terminal
+  "terminal": {
+    "shell": {
+      "with_arguments": {
+        "program": "/bin/zsh",
+        "args": ["--login"]
+      }
+    }
+  },
+
+  // UI
+  "theme": "Catppuccin Frappé - No Italics",
+  "buffer_font_size": 12,
+  "ui_font_size": 13
+}
