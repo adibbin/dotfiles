@@ -5,6 +5,7 @@
       "milliseconds": 500
     }
   },
+  "file_scan_exclusions": [".yarn/", "**/redoc.standalone.js"],
   "inlay_hints": {
     "enabled": true
   },
