@@ -1,5 +1,4 @@
 {
-  // Editor
   "autosave": {
     "after_delay": {
       "milliseconds": 500
@@ -12,7 +11,6 @@
   "relative_line_numbers": true,
   "vim_mode": true,
 
-  // Terminal
   "terminal": {
     "shell": {
       "with_arguments": {
@@ -22,8 +20,11 @@
     }
   },
 
-  // UI
   "theme": "Catppuccin Frappé - No Italics",
-  "buffer_font_size": 12,
-  "ui_font_size": 13
+  "buffer_font_size": 13,
+  "ui_font_size": 14,
+
+  "features": {
+    "inline_completion_provider": "supermaven"
+  }
 }
