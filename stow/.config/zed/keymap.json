@@ -5,9 +5,7 @@
       "ctrl-h": ["workspace::ActivatePaneInDirection", "Left"],
       "ctrl-j": ["workspace::ActivatePaneInDirection", "Down"],
       "ctrl-k": ["workspace::ActivatePaneInDirection", "Up"],
-      "ctrl-l": ["workspace::ActivatePaneInDirection", "Right"],
-      "g r": "editor::Rename",
-      "shift-k": "editor::Hover"
+      "ctrl-l": ["workspace::ActivatePaneInDirection", "Right"]
     }
   },
   {
