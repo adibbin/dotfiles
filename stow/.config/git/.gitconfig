@@ -1,0 +1,6 @@
+[user]
+    email = adibbinhaider@gmail.com
+    name = Adib Haider
+
+[rebase]
+    updateRefs = true
