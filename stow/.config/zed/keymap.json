@@ -25,5 +25,21 @@
       "ctrl-k": ["workspace::ActivatePaneInDirection", "Up"],
       "ctrl-j": ["workspace::ActivatePaneInDirection", "Down"]
     }
+  },
+  {
+    "context": "AssistantPanel",
+    "bindings": {
+      "cmd-n": "assistant::NewContext"
+    }
+  },
+  {
+    "context": "ProjectPanel",
+    "bindings": {
+      "a": "project_panel::NewFile",
+      "d": "project_panel::Delete",
+      "r": "project_panel::Rename",
+      "shift-a": "project_panel::NewDirectory",
+      "shift-o": "project_panel::RevealInFileManager"
+    }
   }
 ]
