@@ -42,7 +42,7 @@ return {
 				},
 			},
 			ruff_lsp = {},
-			tsserver = {},
+			vtsls = {},
 		}
 
 		local formatters = {

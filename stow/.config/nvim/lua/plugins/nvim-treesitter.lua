@@ -14,6 +14,7 @@ return {
 			'elixir',
 			'go',
 			'heex',
+			'html',
 			'javascript',
 			'lua',
 			'markdown',
