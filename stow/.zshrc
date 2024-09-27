@@ -10,6 +10,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Aliases
 alias dot="cd ~/dotfiles && nvim"
+alias gitroot='cd $(git rev-parse --show-toplevel)'
 alias reload="source ~/.zshrc"
 alias zshconfig="nvim ~/.zshrc"
 
