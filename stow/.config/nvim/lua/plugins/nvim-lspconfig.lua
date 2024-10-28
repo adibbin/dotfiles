@@ -41,6 +41,7 @@ return {
 					telemetry = { enable = false },
 				},
 			},
+			marksman = {},
 			ruff_lsp = {},
 			vtsls = {},
 		}
