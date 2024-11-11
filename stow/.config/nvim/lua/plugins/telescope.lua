@@ -29,8 +29,6 @@ return {
 		-- Git
 		{ '<leader>gc',      '<cmd>Telescope git_commits<cr>', desc = '[g]it [c]ommits' },
 		{ '<leader>gf',      '<cmd>Telescope git_files<cr>',   desc = '[g]it [f]iles' },
-		{ '<leader>gs',      '<cmd>Telescope git_status<cr>',  desc = '[g]it [s]tatus' },
-
 	},
 	opts = {
 		defaults = {
