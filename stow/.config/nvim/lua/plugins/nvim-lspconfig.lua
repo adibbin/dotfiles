@@ -18,7 +18,7 @@ return {
 				-- GOTO
 				map('gd', require('telescope.builtin').lsp_definitions, '[G]oto [D]efinition')
 				map('gs', require('telescope.builtin').lsp_document_symbols, '[G]oto [s]ymbols')
-				map('gS', require('telescope.builtin').lsp_workspace_symbols, '[G]oto workspace [S]ymbols')
+				map('gS', require('telescope.builtin').lsp_dynamic_workspace_symbols, '[G]oto workspace [S]ymbols')
 
 				-- Hover
 				map('K', vim.lsp.buf.hover, 'Hover')
