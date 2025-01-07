@@ -6,9 +6,13 @@
       "ctrl-j": ["workspace::ActivatePaneInDirection", "Down"],
       "ctrl-k": ["workspace::ActivatePaneInDirection", "Up"],
       "ctrl-l": ["workspace::ActivatePaneInDirection", "Right"],
+      "shift k": "editor::Hover",
       "space a a": "assistant::ToggleFocus",
       "space r n": "editor::Rename",
-      "space space": "file_finder::Toggle"
+      "space space": "file_finder::Toggle",
+      // Git
+      "h d": "editor::ToggleHunkDiff",
+      "h r": "editor::RevertSelectedHunks",
     }
   },
   {
