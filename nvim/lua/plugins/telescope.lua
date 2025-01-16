@@ -6,14 +6,14 @@ return {
     cmd = 'Telescope',
     keys = {
         {
-            '<leader>/',
+            '/',
             function()
                 require('telescope.builtin').current_buffer_fuzzy_find(require('telescope.themes').get_dropdown {
                     winblend = 10,
                     previewer = false,
                 })
             end,
-            desc = '[/] fuzzy find'
+            desc = '[/] Fuzzily search in current buffer'
         },
 
         { '<leader><space>', '<cmd>Telescope buffers<cr>',     desc = '[ ] buffers' },
