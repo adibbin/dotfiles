@@ -42,7 +42,7 @@ return {
 				},
 			},
 			marksman = {},
-			ruff_lsp = {},
+			ruff = {},
 			vtsls = {},
 		}
 
