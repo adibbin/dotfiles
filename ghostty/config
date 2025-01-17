@@ -1,2 +1,3 @@
-theme = catppuccin-frappe
 background-opacity = 0.89
+macos-option-as-alt=true
+theme = catppuccin-frappe
