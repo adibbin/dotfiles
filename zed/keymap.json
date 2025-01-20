@@ -6,6 +6,7 @@
       "ctrl-j": ["workspace::ActivatePaneInDirection", "Down"],
       "ctrl-k": ["workspace::ActivatePaneInDirection", "Up"],
       "ctrl-l": ["workspace::ActivatePaneInDirection", "Right"],
+      "g r": "editor::FindAllReferences",
       "shift k": "editor::Hover",
       "space a a": "assistant::ToggleFocus",
       "space r n": "editor::Rename",

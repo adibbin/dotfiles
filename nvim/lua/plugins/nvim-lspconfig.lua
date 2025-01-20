@@ -17,6 +17,7 @@ return {
 
 				-- GOTO
 				map('gd', require('telescope.builtin').lsp_definitions, '[G]oto [D]efinition')
+				map('gr', require('telescope.builtin').lsp_references, '[G]oto [R]eferences')
 				map('gs', require('telescope.builtin').lsp_document_symbols, '[G]oto [s]ymbols')
 				map('gS', require('telescope.builtin').lsp_dynamic_workspace_symbols, '[G]oto workspace [S]ymbols')
 
