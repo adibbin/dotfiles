@@ -3,8 +3,8 @@ local nmap = function(keys, func, desc)
 end
 
 -- Quickfix
-nmap('<M-j>', '<cmd>cnext<CR>', 'Move to the next quickfix item')
-nmap('<M-k>', '<cmd>cprev<CR>', 'Move to the previous quickfix item')
+nmap(']q', '<cmd>cnext<CR>', 'Move to the next quickfix item')
+nmap('[q', '<cmd>cprev<CR>', 'Move to the previous quickfix item')
 
 -- Window navigation
 nmap('<C-h>', '<C-w><C-h>', 'Move focus to the left window')
