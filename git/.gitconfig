@@ -1,9 +1,60 @@
 [user]
-    email = adibbinhaider@gmail.com
-    name = Adib Haider
+	email = adibbinhaider@gmail.com
+  name = Adib Haider
+
+[branch]
+	sort = -committerdate
+
+[column]
+	ui = auto
+
+[commit]
+	verbose = true
+
+[core]
+	excludesfile = ~/.gitignore
+	fsmonitor = true
+	untrackedCache = true
+
+[diff]
+	algorithm = histogram
+	colorMoved = plain
+	mnemonicPrefix = true
+	renames = true
+
+[fetch]
+	all = true
+	prune = true
+	pruneTags = true
+
+[help]
+	autocorrect = prompt
+
+[init]
+	defaultBranch = main
+
+[merge]
+	conflictstyle = zdiff3
+
+[pull]
+	rebase = true
+
+[push]
+	autoSetupRemote = true
+	default = simple
+	followTags = true
 
 [rebase]
-    updateRefs = true
+	autoSquash = true
+	autoStash = true
+	updateRefs = true
+
+[rerere]
+	autoUpdate = true
+	enabled = true
+
+[tag]
+	sort = version:refname
 
 [alias]
     cleanup = "!git fetch -p && git branch -vv | grep ': gone]' | awk '{print $1}' | xargs git branch -D"
