@@ -2,5 +2,8 @@
 .direnv
 .envrc
 
+### macOS ###
+.DS_Store
+
 ### ripgrep ###
 ignore
