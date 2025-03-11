@@ -5,13 +5,19 @@ export EDITOR='nvim'
 # Oh My Zsh Configuration
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="robbyrussell"
-plugins=(asdf git z)
+plugins=(
+	asdf 
+	git 
+	you-should-use
+	z 
+)
 source $ZSH/oh-my-zsh.sh
 
 # Aliases
 alias dot="cd ~/dotfiles && nvim"
 alias gitroot='cd $(git rev-parse --show-toplevel)'
 alias reload="source ~/.zshrc"
+alias v=nvim
 alias zshconfig="nvim ~/.zshrc"
 
 # ZSH syntax highlighting
