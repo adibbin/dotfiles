@@ -20,11 +20,11 @@ alias reload="source ~/.zshrc"
 alias v=nvim
 alias zshconfig="nvim ~/.zshrc"
 
-# ZSH syntax highlighting
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# direnv
+eval "$(direnv hook zsh)"
 
 # FNM (Node version manager)
 eval "$(fnm env --use-on-cd)"
 
-# direnv
-eval "$(direnv hook zsh)"
+# ZSH syntax highlighting
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
