@@ -18,6 +18,7 @@ alias dot="cd ~/dotfiles && nvim"
 alias gitroot='cd $(git rev-parse --show-toplevel)'
 alias reload="source ~/.zshrc"
 alias v=nvim
+alias yarnit="yarn install && yarn build && yarn test"
 alias zshconfig="nvim ~/.zshrc"
 
 # direnv
