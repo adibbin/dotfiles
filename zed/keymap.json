@@ -34,7 +34,7 @@
   {
     "context": "AssistantPanel",
     "bindings": {
-      "cmd-n": "assistant::NewContext"
+      "cmd-n": "assistant::NewChat"
     }
   },
   {
