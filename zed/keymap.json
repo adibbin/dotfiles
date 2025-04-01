@@ -12,7 +12,6 @@
     "bindings": {
       "shift k": "editor::Hover",
       "space a a": "assistant::ToggleFocus",
-      "space space": "file_finder::Toggle",
 
       // Git
       "space g d": "editor::ToggleSelectedDiffHunks",
@@ -32,7 +31,7 @@
     }
   },
   {
-    "context": "EmptyPane || SharedScreen",
+    "context": "EmptyPane || SharedScreen || VimControl && !menu",
     "bindings": {
       "space space": "file_finder::Toggle"
     }
