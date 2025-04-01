@@ -11,7 +11,6 @@
     "context": "VimControl && !menu",
     "bindings": {
       "shift k": "editor::Hover",
-      "space a a": "assistant::ToggleFocus",
 
       // Git
       "space g d": "editor::ToggleSelectedDiffHunks",
@@ -33,13 +32,15 @@
   {
     "context": "EmptyPane || SharedScreen || VimControl && !menu",
     "bindings": {
+      "space a a": "assistant::ToggleFocus",
       "space space": "file_finder::Toggle"
     }
   },
   {
     "context": "AssistantPanel",
     "bindings": {
-      "cmd-n": "assistant::NewChat"
+      "cmd-n": "assistant::NewChat",
+      "space a a": "assistant::ToggleFocus"
     }
   }
 ]
