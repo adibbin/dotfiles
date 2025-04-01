@@ -14,9 +14,10 @@
       "space u h": "editor::ToggleInlayHints",
 
       // Git
+      "space g b": "git::Blame",
       "space g d": "editor::ToggleSelectedDiffHunks",
       "space g r": "git::Restore",
-
+      
       // Goto
       "g 0": "outline::Toggle",
       "g r a": "editor::ConfirmCodeAction",
