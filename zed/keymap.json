@@ -11,6 +11,7 @@
     "context": "VimControl && !menu",
     "bindings": {
       "shift k": "editor::Hover",
+      "space u h": "editor::ToggleInlayHints",
 
       // Git
       "space g d": "editor::ToggleSelectedDiffHunks",
