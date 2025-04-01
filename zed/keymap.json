@@ -23,8 +23,8 @@
       "space q": "workspace::CloseInactiveTabsAndPanes",
       "space Q": "workspace::CloseAllItemsAndPanes",
       // Git
-      "h d": "editor::ToggleHunkDiff",
-      "h r": "editor::RevertSelectedHunks",
+      "space g d": "editor::ToggleSelectedDiffHunks",
+      "space g r": "git::Restore"
     }
   },
   {
