@@ -10,20 +10,25 @@
   {
     "context": "VimControl && !menu",
     "bindings": {
+      "shift k": "editor::Hover",
+      "space a a": "assistant::ToggleFocus",
+      "space space": "file_finder::Toggle",
+
+      // Git
+      "space g d": "editor::ToggleSelectedDiffHunks",
+      "space g r": "git::Restore",
+
+      // Goto
       "g 0": "outline::Toggle",
       "g r a": "editor::ConfirmCodeAction",
       "g r i": "editor::GoToImplementation",
       "g r I": "editor::GoToImplementationSplit",
       "g r n": "editor::Rename",
       "g r r": "editor::FindAllReferences",
-      "shift k": "editor::Hover",
-      "space a a": "assistant::ToggleFocus",
-      "space space": "file_finder::Toggle",
+
+      // Panes (i.e. Buffers)
       "space q": "workspace::CloseInactiveTabsAndPanes",
-      "space Q": "workspace::CloseAllItemsAndPanes",
-      // Git
-      "space g d": "editor::ToggleSelectedDiffHunks",
-      "space g r": "git::Restore"
+      "space Q": "workspace::CloseAllItemsAndPanes"
     }
   },
   {
