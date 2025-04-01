@@ -8,7 +8,7 @@
     }
   },
   {
-    "context": "Editor && VimControl && !VimWaiting && !menu",
+    "context": "VimControl && !menu",
     "bindings": {
       "g 0": "outline::Toggle",
       "g r a": "editor::ConfirmCodeAction",
