@@ -11,6 +11,8 @@
       "space a a": "assistant::ToggleFocus",
       "space r n": "editor::Rename",
       "space space": "file_finder::Toggle",
+      "space q": "workspace::CloseInactiveTabsAndPanes",
+      "space Q": "workspace::CloseAllItemsAndPanes",
       // Git
       "h d": "editor::ToggleHunkDiff",
       "h r": "editor::RevertSelectedHunks",
