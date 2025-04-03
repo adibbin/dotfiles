@@ -6,12 +6,15 @@ export EDITOR='nvim'
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="robbyrussell"
 plugins=(
-	asdf 
-	git 
+	asdf
+	git
 	you-should-use
-	z 
+	z
 )
 source $ZSH/oh-my-zsh.sh
+
+# ZSH You Should Use
+export YSU_MESSAGE_POSITION="after"
 
 # Aliases
 alias dot="cd ~/dotfiles && nvim"
