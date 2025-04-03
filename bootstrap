@@ -3,10 +3,11 @@
 main() {
 	ln -s ~/dotfiles/.zshrc ~/.zshrc
 
-	. scripts/xcode_cli_tools
 	. scripts/brew
 	. scripts/macOS
+	. scripts/oh_my_zsh
 	. scripts/stow
+	. scripts/xcode_cli_tools
 }
 
 main

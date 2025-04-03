@@ -1,0 +1,16 @@
+#!/bin/bash
+
+local plugin_url="https://github.com/MichaelAquilina/zsh-you-should-use.git"
+local plugin_dir="$HOME/.oh-my-zsh/custom/plugins/you-should-use"
+
+echo "Starting installation of You Should Use plugin for Zsh..."
+
+if [ -d "$plugin_dir" ]; then
+    echo -e "\033[1;33mYou Should Use plugin is already installed ⚠️\033[0m"
+else
+    if git clone "$plugin_url" "$plugin_dir"; then
+        echo -e "\033[1;32mYou Should Use plugin installed successfully ✅\033[0m"
+    else
+        echo -e "\033[1;31mFailed to install You Should Use plugin ❌\033[0m"
+    fi
+fi
