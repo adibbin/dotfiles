@@ -36,6 +36,6 @@
   "ui_font_size": 14,
 
   "features": {
-    "inline_completion_provider": "copilot"
+    "edit_prediction_provider": "copilot"
   }
 }
