@@ -27,10 +27,15 @@
     }
   },
 
-   "theme": {
+  "theme": {
     "mode": "system",
-    "light": "Catppuccin Latte - No Italics",
-    "dark": "Catppuccin Frappé - No Italics"
+    "dark": "Catppuccin Frappé - No Italics",
+    "light": "Catppuccin Latte - No Italics"
+  },
+  "icon_theme": {
+    "mode": "system",
+    "dark": "Catppuccin Frappé",
+    "light": "Catppuccin Latte"
   },
   "buffer_font_size": 13,
   "ui_font_size": 14,
