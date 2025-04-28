@@ -1,8 +1,8 @@
 {
   "assistant": {
     "default_model": {
-      "provider": "copilot_chat",
-      "model": "gpt-4o"
+      "provider": "google",
+      "model": "gemini-2.5-flash-preview-04-17"
     },
     "version": "2"
   },
@@ -34,8 +34,8 @@
   },
   "icon_theme": {
     "mode": "system",
-    "dark": "Catppuccin Frappé",
-    "light": "Catppuccin Macchiato"
+    "dark": "Catppuccin Macchiato",
+    "light": "Catppuccin Latte"
   },
   "buffer_font_size": 13,
   "ui_font_size": 14,
