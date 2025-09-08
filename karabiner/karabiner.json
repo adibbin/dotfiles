@@ -1,0 +1,72 @@
+{
+  "global": {
+    "create_backup_files": false,
+    "show_in_menu_bar": false
+  },
+  "profiles": [
+    {
+      "complex_modifications": {
+        "rules": [
+          {
+            "description": "Switch to Swedish on built-in keyboard with CAPS LOCK",
+            "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "identifiers": [{ "is_built_in_keyboard": true }],
+                    "type": "device_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "caps_lock",
+                  "modifiers": { "optional": ["any"] }
+                },
+                "to": [
+                  {
+                    "select_input_source": {
+                      "input_source_id": "com.apple.keylayout.Swedish-Pro"
+                    }
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Switch to US on Silakka54 with CAPS LOCK",
+            "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "identifiers": [
+                      {
+                        "product_id": 4626,
+                        "vendor_id": 65261
+                      }
+                    ],
+                    "type": "device_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "caps_lock",
+                  "modifiers": { "optional": ["any"] }
+                },
+                "to": [
+                  {
+                    "select_input_source": {
+                      "input_source_id": "com.apple.keylayout.US"
+                    }
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          }
+        ]
+      },
+      "name": "Default profile",
+      "selected": true,
+      "virtual_hid_keyboard": { "keyboard_type_v2": "iso" }
+    }
+  ]
+}
