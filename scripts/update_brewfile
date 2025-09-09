@@ -1,0 +1,5 @@
+#!/bin/bash
+
+brew bundle dump --force --file=Brewfile
+git add Brewfile
+git commit -m "brew: update Brewfile"
