@@ -3,3 +3,6 @@
 
 ### Karabiner ###
 karabiner/automatic_backups
+
+### zsh
+.zshrc.local

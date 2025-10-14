@@ -32,3 +32,8 @@ eval "$(fnm env --use-on-cd)"
 
 # ZSH syntax highlighting
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# Source local-only configurations
+if [ -f "$HOME/.zshrc.local" ]; then
+  source "$HOME/.zshrc.local"
+fi
