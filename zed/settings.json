@@ -27,20 +27,15 @@
     }
   },
 
+  // Theme
   "theme": {
     "mode": "system",
-    "dark": "Catppuccin Macchiato - No Italics",
-    "light": "Catppuccin Latte - No Italics"
+    "dark": "Catppuccin Mocha",
+    "light": "Catppuccin Macchiato"
   },
   "icon_theme": {
     "mode": "system",
     "dark": "Catppuccin Macchiato",
-    "light": "Catppuccin Latte"
-  },
-  "buffer_font_size": 13,
-  "ui_font_size": 14,
-
-  "features": {
-    "edit_prediction_provider": "copilot"
+    "light": "Catppuccin Macchiato"
   }
 }
