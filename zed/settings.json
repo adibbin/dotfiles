@@ -1,23 +1,36 @@
 {
-  "assistant": {
-    "default_model": {
-      "provider": "google",
-      "model": "gemini-2.5-flash-preview-04-17"
+  // AI
+  "agent": {
+    "always_allow_tool_actions": true,
+    "play_sound_when_agent_done": true,
+    "inline_assistant_model": {
+      "provider": "amazon-bedrock",
+      "model": "claude-haiku-4-5"
     },
-    "version": "2"
+    "default_model": {
+      "provider": "amazon-bedrock",
+      "model": "claude-sonnet-4-5"
+    },
+    "model_parameters": []
   },
+  "language_models": {
+    "bedrock": {
+      "authentication_method": "named_profile",
+      "region": "eu-west-1",
+      "profile": "bedrock-ai"
+    }
+  },
+
+  // Editor
   "autosave": {
     "after_delay": {
       "milliseconds": 500
     }
   },
-  "file_scan_exclusions": [".yarn/", "**/redoc.standalone.js"],
-  "inlay_hints": {
-    "enabled": true
-  },
-  "relative_line_numbers": true,
+  "relative_line_numbers": "enabled",
   "vim_mode": true,
 
+  // Terminal
   "terminal": {
     "shell": {
       "with_arguments": {
@@ -27,7 +40,11 @@
     }
   },
 
-  // Theme
+  // UI
+  "tabs": {
+    "file_icons": true,
+    "git_status": true
+  },
   "theme": {
     "mode": "system",
     "dark": "Catppuccin Mocha",

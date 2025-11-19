@@ -2,19 +2,18 @@
   {
     "bindings": {
       "ctrl-h": "workspace::ActivatePaneLeft",
-      "ctrl-l": "workspace::ActivatePaneRight",
+      "ctrl-j": "workspace::ActivatePaneDown",
       "ctrl-k": "workspace::ActivatePaneUp",
-      "ctrl-j": "workspace::ActivatePaneDown"
+      "ctrl-l": "workspace::ActivatePaneRight"
     }
   },
   // VIM Normal & Visual
   {
     "context": "VimControl && !menu",
     "bindings": {
-      // Agent
-      "space a": "agent::ToggleFocus",
-
       "shift k": "editor::Hover",
+      "space a a": "agent::ToggleFocus",
+      "space space": "file_finder::Toggle",
       "space u h": "editor::ToggleInlayHints",
 
       // Git
@@ -36,8 +35,9 @@
     }
   },
   {
-    "context": "EmptyPane || SharedScreen || VimControl && !menu",
+    "context": "EmptyPane",
     "bindings": {
+      "space a a": "agent::ToggleFocus",
       "space space": "file_finder::Toggle"
     }
   }
