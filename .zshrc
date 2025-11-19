@@ -1,20 +1,19 @@
 export XDG_CONFIG_HOME="$HOME/.config"
+
 export GIT_CONFIG_GLOBAL="$XDG_CONFIG_HOME/git/.gitconfig"
+
 export EDITOR='nvim'
 
 # Oh My Zsh Configuration
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="robbyrussell"
 plugins=(
-	asdf
-	git
-	you-should-use
-	z
+    asdf
+    git
+    you-should-use
+    z
 )
 source $ZSH/oh-my-zsh.sh
-
-# ZSH You Should Use
-export YSU_MESSAGE_POSITION="after"
 
 # Aliases
 alias dot="cd ~/dotfiles && nvim"
@@ -23,6 +22,9 @@ alias reload="source ~/.zshrc"
 alias v=nvim
 alias yarnit="yarn install && yarn build && yarn test"
 alias zshconfig="nvim ~/.zshrc"
+
+# Antigravity
+export PATH="/Users/adib.haider/.antigravity/antigravity/bin:$PATH"
 
 # direnv
 eval "$(direnv hook zsh)"
@@ -33,7 +35,10 @@ eval "$(fnm env --use-on-cd)"
 # ZSH syntax highlighting
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+# ZSH You Should Use
+export YSU_MESSAGE_POSITION="after"
+
 # Source local-only configurations
 if [ -f "$HOME/.zshrc.local" ]; then
-  source "$HOME/.zshrc.local"
+    source "$HOME/.zshrc.local"
 fi
