@@ -19,7 +19,7 @@
       // Git
       "space g b": "git::Blame",
       "space g d": "editor::ToggleSelectedDiffHunks",
-      "space g r": "git::Restore",
+      "space g h r": "git::Restore",
 
       // Goto
       "g 0": "outline::Toggle",
