@@ -1,0 +1,10 @@
+#!/bin/bash
+
+CURSOR_DIR="$HOME/Library/Application Support/Cursor/User"
+DOTFILES_CURSOR="$HOME/dotfiles/cursor"
+
+mkdir -p "$CURSOR_DIR"
+
+ln -sf "$DOTFILES_CURSOR/settings.json" "$CURSOR_DIR/settings.json"
+
+echo "Cursor setup complete ✅"

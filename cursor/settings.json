@@ -1,0 +1,15 @@
+{
+  "workbench.colorTheme": "Catppuccin Frappé",
+  "vim.enabled": true,
+  "vim.leader": "<space>",
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "<leader>"],
+      "commands": ["workbench.action.quickOpen"]
+    },
+    {
+      "before": ["<leader>", "g", "h", "r"],
+      "commands": ["git.revertSelectedRanges"]
+    }
+  ]
+}

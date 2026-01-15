@@ -8,6 +8,7 @@ main() {
 	. scripts/oh_my_zsh
 	. scripts/stow
 	. scripts/xcode_cli_tools
+	. scripts/cursor
 }
 
 main
