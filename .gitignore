@@ -6,3 +6,6 @@ karabiner/automatic_backups
 
 ### zsh
 .zshrc.local
+
+### Claude
+claude/settings.work.json
