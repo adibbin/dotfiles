@@ -19,16 +19,6 @@ else
 	echo "Claude skills symlinked ✅"
 fi
 
-# Settings: symlink to work settings if present, otherwise universal
-if [ -f "$DOTFILES_CLAUDE/settings.work.json" ]; then
-	TARGET="$DOTFILES_CLAUDE/settings.work.json"
-else
-	TARGET="$DOTFILES_CLAUDE/settings.json"
-fi
-
-if [ -L "$CLAUDE/settings.json" ] && [ "$(readlink "$CLAUDE/settings.json")" = "$TARGET" ]; then
-	echo "Claude settings.json already symlinked ✅"
-else
-	ln -sf "$TARGET" "$CLAUDE/settings.json"
-	echo "Claude settings.json symlinked → $(basename "$TARGET") ✅"
-fi
+# Settings: symlink to personal settings
+ln -sf "$DOTFILES_CLAUDE/settings.json" "$CLAUDE/settings.json"
+echo "Claude settings.json symlinked ✅"
