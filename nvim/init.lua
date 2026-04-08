@@ -1,5 +1,4 @@
-require("config.globals")
-require("config.keymap")
-require("config.options")
-require("config.lazy")
-require("oil").setup()
+vim.g.mapleader = " "
+
+require("options")
+require("keymaps")
