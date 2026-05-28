@@ -1,0 +1,7 @@
+scripts/
+Brewfile
+Brewfile.lock.json
+bootstrap
+README.md
+.gitignore
+.git/

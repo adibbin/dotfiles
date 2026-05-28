@@ -1,5 +1,0 @@
-#!/bin/bash
-
-stow .
-
-echo "Stowed complete ✅"

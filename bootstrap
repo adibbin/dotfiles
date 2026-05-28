@@ -1,15 +1,17 @@
 #!/bin/bash
 
 main() {
-	ln -s ~/dotfiles/.zshrc ~/.zshrc
+    if ! command -v chezmoi &> /dev/null; then
+        brew install chezmoi
+    fi
 
-	. scripts/brew
-	. scripts/macOS
-	. scripts/oh_my_zsh
-	. scripts/stow
-	. scripts/xcode_cli_tools
-	. scripts/cursor
-	. scripts/claude
+    chezmoi init --source "$HOME/dotfiles" --apply
+
+    . scripts/brew
+    . scripts/macOS
+    . scripts/oh_my_zsh
+    . scripts/xcode_cli_tools
+    . scripts/cursor
 }
 
 main

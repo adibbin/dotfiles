@@ -2,10 +2,7 @@
 .DS_Store
 
 ### Karabiner ###
-karabiner/automatic_backups
+dot_config/karabiner/automatic_backups
 
-### zsh
+### zsh ###
 .zshrc.local
-
-### Claude
-claude/settings.work.json

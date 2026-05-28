@@ -1,0 +1,5 @@
+{{- if .isWork -}}
+{{- template "claude-settings-work.json" . -}}
+{{- else -}}
+{{- template "claude-settings-personal.json" . -}}
+{{- end -}}
