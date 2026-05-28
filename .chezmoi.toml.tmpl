@@ -1,4 +1,9 @@
 {{- $isWork := promptBoolOnce . "isWork" "Is this a work machine" -}}
+{{- $awsRegion := "us-east-1" -}}
+{{- if $isWork -}}
+{{-   $awsRegion = promptStringOnce . "awsRegion" "AWS region for Bedrock" -}}
+{{- end -}}
 
 [data]
     isWork = {{ $isWork }}
+    awsRegion = {{ $awsRegion | quote }}
