@@ -1,0 +1,11 @@
+#!/bin/bash
+
+SSH_DIR="$HOME/.ssh"
+DOTFILES_SSH="$HOME/dotfiles/ssh"
+
+mkdir -p "$SSH_DIR"
+chmod 700 "$SSH_DIR"
+
+ln -sf "$DOTFILES_SSH/config" "$SSH_DIR/config"
+
+echo "SSH config setup complete ✅"
