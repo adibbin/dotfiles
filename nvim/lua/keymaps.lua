@@ -21,3 +21,12 @@ map('n', 'gA', fzf.lsp_references, 'All references')
 map('n', 'gI', fzf.lsp_implementations, 'Go to Implementation')
 map('n', 'gs', fzf.lsp_document_symbols, 'Symbols in File')
 map('n', 'gS', fzf.lsp_workspace_symbols, 'Symbols in Project')
+
+
+-- LSP
+map('n', 'g.', vim.lsp.buf.code_action, 'Code Action')
+map('n', 'gd', vim.lsp.buf.definition, 'Go to Definition')
+map('n', 'gD', vim.lsp.buf.declaration, 'Go to Declaration')
+map('n', 'gy', vim.lsp.buf.type_definition, 'Go to Type Definition')
+map('n', 'g[', vim.diagnostic.goto_prev, 'Prev Diagnostic')
+map('n', 'g]', vim.diagnostic.goto_next, 'Next Diagnostic')

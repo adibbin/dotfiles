@@ -75,6 +75,10 @@ brew "shfmt"
 brew "stow"
 # Terminal multiplexer
 brew "tmux"
+# Language for application scale JavaScript development
+brew "typescript"
+# Language Server Protocol implementation for TypeScript wrapping tsserver
+brew "typescript-language-server"
 # Extremely fast Python package installer and resolver, written in Rust
 brew "uv"
 # JavaScript package manager
