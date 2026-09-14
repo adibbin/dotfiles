@@ -9,7 +9,6 @@ main() {
 	. scripts/stow
 	. scripts/ssh
 	. scripts/xcode_cli_tools
-	. scripts/cursor
 	. scripts/claude
 }
 

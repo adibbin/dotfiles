@@ -100,8 +100,6 @@ cask "claude-code"
 cask "codex"
 # Brings the power of Copilot coding agent directly to your terminal
 cask "copilot-cli"
-# Write, edit, and chat about your code with AI
-cask "cursor"
 # App to build and share containerised applications and microservices
 cask "docker-desktop"
 cask "entire"
