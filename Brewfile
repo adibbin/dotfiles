@@ -4,8 +4,6 @@ tap "elixir-tools/tap"
 tap "nikitabobko/tap"
 tap "oven-sh/bun"
 tap "systemmanic/yawsso", "https://github.com/Systemmanic/homebrew-yawsso.git"
-# Run your GitHub Actions locally
-brew "act"
 # Extendable version manager with support for Ruby, Node.js, Erlang & more
 brew "asdf"
 # Automatic configure script builder
