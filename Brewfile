@@ -70,8 +70,6 @@ brew "ruff"
 brew "shfmt"
 # Organize software neatly under a single directory tree (e.g. /usr/local)
 brew "stow"
-# Terminal multiplexer
-brew "tmux"
 # Parser generator tool
 brew "tree-sitter-cli"
 # Language for application scale JavaScript development
