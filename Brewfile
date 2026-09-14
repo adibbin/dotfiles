@@ -32,8 +32,6 @@ brew "easy-rsa"
 brew "erlang"
 # Play, record, convert, and stream select audio and video codecs
 brew "ffmpeg"
-# Command-line tools for fly.io services
-brew "flyctl"
 # Fast and simple Node.js version manager
 brew "fnm"
 # OpenType text shaping engine
