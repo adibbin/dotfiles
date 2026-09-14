@@ -18,8 +18,6 @@ brew "awscli"
 brew "glib"
 # Cryptographic recipes and primitives for Python
 brew "cryptography"
-# Modern diagram scripting language that turns text to diagrams
-brew "d2"
 # Load/unload environment variables based on $PWD
 brew "direnv"
 # CLI utility to build and manage a PKI CA
