@@ -6,8 +6,9 @@ vim.pack.add({
   'https://github.com/nvim-treesitter/nvim-treesitter'
 })
 
-require("options")
+require("config.options")
 
-require("keymaps")
-require("lsp")
-require("treesitter")
+require("config.keymaps")
+
+require("config.lsp")
+require("config.treesitter")
