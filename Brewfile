@@ -45,8 +45,6 @@ brew "goose"
 brew "jq"
 # C XSLT library for GNOME
 brew "libxslt"
-# LLM inference in C/C++
-brew "llama.cpp"
 # Incremental parsing library
 brew "tree-sitter"
 # Ambitious Vim-fork focused on extensibility and agility
