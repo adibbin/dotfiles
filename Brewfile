@@ -63,8 +63,6 @@ brew "opencode"
 brew "pnpm"
 # Service monitoring system and time series database
 brew "prometheus"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.12"
 # Powerful, clean, object-oriented scripting language
 brew "ruby", link: false
 # Ruby autoformatter
