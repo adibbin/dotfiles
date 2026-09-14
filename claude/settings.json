@@ -1,7 +1,36 @@
 {
+  "permissions": {
+    "defaultMode": "auto"
+  },
+  "model": "sonnet",
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/dotfiles/claude/hooks/claude-notify.sh 'Claude done'"
+          }
+        ]
+      }
+    ],
+    "Notification": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/dotfiles/claude/hooks/claude-notify.sh 'Claude, attention needed'"
+          }
+        ]
+      }
+    ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "bash ~/.claude/statusline-command.sh"
+  },
   "enabledPlugins": {
     "claude-code-setup@claude-plugins-official": true,
-    "claude-md-management@claude-plugins-official": true,
     "code-review@claude-plugins-official": true,
     "code-simplifier@claude-plugins-official": true,
     "commit-commands@claude-plugins-official": true,
@@ -12,26 +41,30 @@
     "pr-review-toolkit@claude-plugins-official": true,
     "security-guidance@claude-plugins-official": true,
     "skill-creator@claude-plugins-official": true,
-    "superpowers@claude-plugins-official": true
+    "notion@claude-plugins-official": true,
+    "slack@claude-plugins-official": true,
+    "eli5@claude-community": true,
+    "rust-analyzer-lsp@claude-plugins-official": true,
+    "miro@claude-plugins-official": true
   },
-  "statusLine": {
-    "type": "command",
-    "command": "bash ~/.claude/statusline-command.sh"
+  "extraKnownMarketplaces": {
+    "notion-plugin-marketplace": {
+      "source": {
+        "source": "github",
+        "repo": "makenotion/claude-code-notion-plugin"
+      }
+    },
+    "claude-community": {
+      "source": {
+        "source": "github",
+        "repo": "anthropics/claude-plugins-community"
+      }
+    }
   },
-  "voiceEnabled": true,
   "sandbox": {
     "enabled": true
   },
-  "hooks": {
-    "Stop": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "afplay /System/Library/Sounds/Morse.aiff 2>/dev/null || true"
-          }
-        ]
-      }
-    ]
-  }
+  "verbose": true,
+  "agentPushNotifEnabled": true,
+  "voiceEnabled": true
 }

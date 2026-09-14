@@ -10,3 +10,7 @@ ignore
 
 ### Worktrees ###
 .worktrees/
+
+**/.claude/settings.local.json
+
+**/.claude/.cc-writes/

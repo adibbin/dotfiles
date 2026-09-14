@@ -20,8 +20,6 @@ brew "glib"
 brew "cryptography"
 # Modern diagram scripting language that turns text to diagrams
 brew "d2"
-# Secure runtime for JavaScript and TypeScript
-brew "deno"
 # Load/unload environment variables based on $PWD
 brew "direnv"
 # CLI utility to build and manage a PKI CA
@@ -92,10 +90,6 @@ brew "zsh-syntax-highlighting"
 cask "aws-vault-binary"
 # Terminal-based AI coding assistant
 cask "claude-code"
-# OpenAI's coding agent that runs in your terminal
-cask "codex"
-# Brings the power of Copilot coding agent directly to your terminal
-cask "copilot-cli"
 # App to build and share containerised applications and microservices
 cask "docker-desktop"
 cask "font-jetbrains-mono"

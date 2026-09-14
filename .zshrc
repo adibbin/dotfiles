@@ -33,6 +33,12 @@ eval "$(direnv hook zsh)"
 # FNM (Node version manager)
 eval "$(fnm env --use-on-cd)"
 
+# fzf 
+source <(fzf --zsh)
+
+# Kamal
+export PATH="/opt/homebrew/lib/ruby/gems/4.0.0/bin:$PATH"
+
 # ZSH syntax highlighting
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 

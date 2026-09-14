@@ -13,21 +13,15 @@
     "bindings": {
       "shift k": "editor::Hover",
       "space a a": "agent::ToggleFocus",
+      "space e": "project_panel::ToggleFocus",
       "space space": "file_finder::Toggle",
       "space u h": "editor::ToggleInlayHints",
 
       // Git
+      "space g g": "git_panel::Toggle",
       "space g b": "git::Blame",
       "space g d": "editor::ToggleSelectedDiffHunks",
       "space g h r": "git::Restore",
-
-      // Goto
-      "g 0": "outline::Toggle",
-      "g r a": "editor::ConfirmCodeAction",
-      "g r i": "editor::GoToImplementation",
-      "g r I": "editor::GoToImplementationSplit",
-      "g r n": "editor::Rename",
-      "g r r": "editor::FindAllReferences",
 
       // Panes (i.e. Buffers)
       "space q": "workspace::CloseInactiveTabsAndPanes",
@@ -35,9 +29,31 @@
     },
   },
   {
+    "context": "AgentPanel",
+    "bindings": {
+      "space a a": "workspace::ToggleRightDock",
+      // "space e": "project_panel::ToggleFocus",
+    },
+  },
+  {
+    "context": "ProjectPanel",
+    "bindings": {
+      "space a a": "agent::ToggleFocus",
+      "space e": "workspace::ToggleRightDock",
+    },
+  },
+  {
+    "context": "GitPanel",
+    "bindings": {
+      "space g g": "workspace::ToggleLeftDock",
+    },
+  },
+  {
     "context": "EmptyPane",
     "bindings": {
       "space a a": "agent::ToggleFocus",
+      // "space e": "project_panel::ToggleFocus",
+      "space g g": "workspace::ToggleLeftDock",
       "space space": "file_finder::Toggle",
     },
   },

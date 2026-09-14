@@ -1,5 +1,68 @@
 {
   // Editor
+  "lsp": {
+    "vtsls": {
+      "settings": {
+        "typescript": {
+          "updateImportsOnFileMove": {
+            "enabled": "always"
+          }
+        },
+        "javascript": {
+          "updateImportsOnFileMove": {
+            "enabled": "always"
+          }
+        }
+      },
+      "enable_lsp_tasks": true
+    }
+  },
+  "agent_servers": {
+    "claude-acp": {
+      "default_config_options": {
+        "mode": "auto",
+        "model": "eu.anthropic.claude-sonnet-5"
+      },
+      "type": "registry"
+    }
+  },
+  "cli_default_open_behavior": "existing_window",
+  "outline_panel": {
+    "dock": "right"
+  },
+  "collaboration_panel": {
+    "dock": "right"
+  },
+  "git_panel": {
+    "dock": "right"
+  },
+  "agent": {
+    "dock": "left",
+    "default_profile": "ask",
+    "inline_assistant_model": {
+      "provider": "amazon-bedrock",
+      "model": "claude-opus-4-6",
+      "enable_thinking": false
+    },
+    "default_model": {
+      "effort": "high",
+      "enable_thinking": true,
+      "provider": "amazon-bedrock",
+      "model": "claude-opus-4-8",
+    },
+    "favorite_models": [],
+    "model_parameters": [],
+  },
+  "language_models": {
+    "bedrock": {
+      "authentication_method": "named_profile",
+      "region": "eu-west-1",
+      "profile": "bedrock-ai",
+    },
+  },
+  "project_panel": {
+    "dock": "right",
+  },
   "autosave": {
     "after_delay": {
       "milliseconds": 500,
@@ -25,8 +88,8 @@
   },
   "theme": {
     "mode": "system",
-    "dark": "Catppuccin Mocha",
-    "light": "Catppuccin Macchiato",
+    "dark": "Catppuccin Macchiato - No Italics",
+    "light": "Catppuccin Macchiato - No Italics",
   },
   "icon_theme": {
     "mode": "system",
