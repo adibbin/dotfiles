@@ -42,8 +42,6 @@ brew "openjdk"
 brew "fop"
 # Command-line fuzzy finder written in Go
 brew "fzf"
-# Interact with Google Gemini AI models from the command-line
-brew "gemini-cli"
 # GitHub command-line tool
 brew "gh"
 # Open source programming language to build simple/reliable/efficient software
