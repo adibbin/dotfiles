@@ -1,4 +1,3 @@
-tap "andyyyy64/whichllm"
 tap "anomalyco/tap"
 tap "elixir-tools/tap"
 tap "systemmanic/yawsso", "https://github.com/Systemmanic/homebrew-yawsso.git"
