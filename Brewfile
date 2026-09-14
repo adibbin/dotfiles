@@ -1,7 +1,6 @@
 tap "andyyyy64/whichllm"
 tap "anomalyco/tap"
 tap "elixir-tools/tap"
-tap "entireio/tap"
 tap "nikitabobko/tap"
 tap "oven-sh/bun"
 tap "systemmanic/yawsso", "https://github.com/Systemmanic/homebrew-yawsso.git"
@@ -102,7 +101,6 @@ cask "codex"
 cask "copilot-cli"
 # App to build and share containerised applications and microservices
 cask "docker-desktop"
-cask "entire"
 cask "font-jetbrains-mono"
 # Terminal emulator that uses platform-native UI and GPU acceleration
 cask "ghostty"
