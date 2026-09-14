@@ -53,6 +53,8 @@ brew "jq"
 brew "libxslt"
 # LLM inference in C/C++
 brew "llama.cpp"
+# Incremental parsing library
+brew "tree-sitter"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
 # Search tool like grep and The Silver Searcher
@@ -75,6 +77,8 @@ brew "shfmt"
 brew "stow"
 # Terminal multiplexer
 brew "tmux"
+# Parser generator tool
+brew "tree-sitter-cli"
 # Language for application scale JavaScript development
 brew "typescript"
 # Language Server Protocol implementation for TypeScript wrapping tsserver
