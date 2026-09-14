@@ -1,7 +1,6 @@
 tap "andyyyy64/whichllm"
 tap "anomalyco/tap"
 tap "elixir-tools/tap"
-tap "nikitabobko/tap"
 tap "oven-sh/bun"
 tap "systemmanic/yawsso", "https://github.com/Systemmanic/homebrew-yawsso.git"
 # Extendable version manager with support for Ruby, Node.js, Erlang & more
@@ -84,7 +83,6 @@ brew "uv"
 brew "yarn"
 # Fish shell like syntax highlighting for zsh
 brew "zsh-syntax-highlighting"
-cask "aerospace"
 # Securely stores and accesses AWS credentials in a development environment
 cask "aws-vault-binary"
 # Terminal-based AI coding assistant
