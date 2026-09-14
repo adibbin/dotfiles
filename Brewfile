@@ -1,7 +1,6 @@
 tap "andyyyy64/whichllm"
 tap "anomalyco/tap"
 tap "elixir-tools/tap"
-tap "oven-sh/bun"
 tap "systemmanic/yawsso", "https://github.com/Systemmanic/homebrew-yawsso.git"
 # Extendable version manager with support for Ruby, Node.js, Erlang & more
 brew "asdf"
