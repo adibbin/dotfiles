@@ -20,8 +20,14 @@ brew "cryptography"
 brew "direnv"
 # CLI utility to build and manage a PKI CA
 brew "easy-rsa"
+# TIFF library and utilities
+brew "libtiff"
 # Programming language for highly scalable real-time systems
 brew "erlang"
+# Functional metaprogramming aware language built on Erlang VM
+brew "elixir"
+# Language Server and Debugger for Elixir
+brew "elixir-ls"
 # Play, record, convert, and stream select audio and video codecs
 brew "ffmpeg"
 # Fast and simple Node.js version manager
