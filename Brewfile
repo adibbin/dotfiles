@@ -1,8 +1,7 @@
 tap "anomalyco/tap"
 tap "elixir-tools/tap"
+tap "nikitabobko/tap"
 tap "systemmanic/yawsso", "https://github.com/Systemmanic/homebrew-yawsso.git"
-# Extendable version manager with support for Ruby, Node.js, Erlang & more
-brew "asdf"
 # Automatic configure script builder
 brew "autoconf"
 # Cryptography and SSL/TLS Toolkit
