@@ -28,6 +28,8 @@ brew "erlang"
 brew "elixir"
 # Language Server and Debugger for Elixir
 brew "elixir-ls"
+# Official Elixir Language Server Protocol implementation
+brew "expert"
 # Play, record, convert, and stream select audio and video codecs
 brew "ffmpeg"
 # Fast and simple Node.js version manager

@@ -1,3 +1,4 @@
+vim.lsp.enable('expert')
 vim.lsp.enable('ts_ls')
 
 vim.api.nvim_create_autocmd('LspAttach', {
