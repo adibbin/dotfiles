@@ -64,6 +64,8 @@ brew "opencode"
 brew "pnpm"
 # Service monitoring system and time series database
 brew "prometheus"
+# Static type checker for Python
+brew "pyright"
 # Powerful, clean, object-oriented scripting language
 brew "ruby", link: false
 # Ruby autoformatter
