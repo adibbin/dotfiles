@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{{TOPIC}} · teach-me</title>
+<!--
+  teach-me lesson file: ONE file per topic, one <section data-layer> per layer.
+  Append new layers just above the CHEATSHEET marker. The nav builds itself.
+
+  Components (plain markup; the JS at the bottom wires them up):
+    .panel / .insight / .good / .warn / .bad       callout boxes
+    .stepper > .step[data-hl="id1,id2"]            step-through; highlights SVG ids per step
+    .toggle  > button[data-show=k] + .pane[data-pane=k]   switch between scenarios
+    SVG: .box .lbl .small .arrow (animated, uses marker #ah) .hl (highlight)
+-->
+<style>
+  :root { --bg:#0f1115; --card:#161a22; --line:#2a303c; --line2:#3a4150; --fg:#e6e6e6; --dim:#9aa3ad;
+          --blue:#2f6feb; --lblue:#8ab4ff; --green:#3fb950; --orange:#f0883e; --red:#f85149; --yellow:#f0c000; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:15px/1.6 -apple-system,system-ui,sans-serif; display:flex; }
+  nav { position:sticky; top:0; height:100vh; width:240px; flex-shrink:0; border-right:1px solid var(--line); padding:20px 14px; overflow:auto; }
+  nav .title { font-weight:600; margin-bottom:14px; }
+  nav a { display:block; color:var(--dim); text-decoration:none; padding:6px 10px; border-radius:6px; font-size:13px; }
+  nav a.active { background:#1a2440; color:var(--fg); }
+  main { flex:1; padding:28px 36px 120px; max-width:1100px; }
+  section { padding-top:12px; margin-bottom:56px; scroll-margin-top:16px; }
+  section > h2 { font-size:21px; margin:0 0 4px; } .kicker { color:var(--lblue); font-size:12px; text-transform:uppercase; letter-spacing:.08em; }
+  h3 { font-size:16px; color:var(--lblue); margin:24px 0 6px; }
+  p, li { color:#cfd3da; }
+  code, pre { font-family:ui-monospace,Menlo,monospace; background:#222835; border-radius:4px; font-size:12.5px; }
+  code { padding:1px 5px; } pre { padding:12px; overflow:auto; line-height:1.5; }
+  table { border-collapse:collapse; margin:8px 0; } td,th { border:1px solid var(--line2); padding:7px 10px; font-size:13px; vertical-align:top; } th { background:#1a1f2b; text-align:left; }
+  button { background:#222835; color:var(--fg); border:1px solid var(--line2); padding:7px 13px; border-radius:6px; cursor:pointer; margin:4px 6px 4px 0; font:inherit; font-size:13px; }
+  button.active { background:var(--blue); border-color:var(--blue); }
+  .panel, .insight, .good, .warn, .bad { background:var(--card); border-left:3px solid var(--blue); padding:12px 16px; margin:12px 0; border-radius:0 8px 8px 0; }
+  .insight { border-color:var(--yellow); } .insight::before { content:"★ Insight"; display:block; font-size:11px; color:var(--yellow); letter-spacing:.06em; margin-bottom:4px; }
+  .good { border-color:var(--green); background:#10261a; } .warn { border-color:var(--orange); background:#2e2210; } .bad { border-color:var(--red); background:#2c1414; }
+  svg.viz { width:100%; height:auto; display:block; background:#12151c; border-radius:10px; margin:8px 0; }
+  .box { fill:#1a1f2b; stroke:var(--line2); stroke-width:1.5; } .box.hl { stroke:var(--yellow); stroke-width:2.5; }
+  .lbl { fill:var(--fg); font-size:13px; text-anchor:middle; } .small { fill:var(--dim); font-size:11px; text-anchor:middle; }
+  .arrow { fill:none; stroke:var(--yellow); stroke-width:2.5; marker-end:url(#ah); stroke-dasharray:7 5; animation:dash 1s linear infinite; }
+  @keyframes dash { to { stroke-dashoffset:-12; } }
+  .stepper .step { display:none; } .stepper .step.on { display:block; }
+  .stepper .ctrl { font-size:12px; color:var(--dim); }
+  .toggle .pane { display:none; } .toggle .pane.on { display:block; }
+  .grid2 { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:14px; }
+</style>
+</head>
+<body>
+<!-- shared arrowhead marker, referenced by .arrow in any SVG on the page -->
+<svg width="0" height="0" style="position:absolute"><defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#f0c000"/></marker></defs></svg>
+
+<nav><div class="title">{{TOPIC}}</div><div id="navlinks"></div></nav>
+<main>
+
+<section data-layer="0" id="layer-0" data-title="Roadmap">
+  <div class="kicker">Roadmap</div>
+  <h2>{{TOPIC}}</h2>
+  <p>{{ONE_PARAGRAPH_WHY_THIS_MATTERS}}</p>
+  <ol>{{LAYER_LIST_OUTSIDE_IN}}</ol>
+</section>
+
+<!-- LAYERS: append <section data-layer="N" id="layer-N" data-title="..."> blocks here -->
+
+<!-- CHEATSHEET: replace with the final summary section at the end of the lesson -->
+
+</main>
+<script>
+// nav: built from sections, highlights the one in view
+const nav = document.getElementById('navlinks');
+const secs = [...document.querySelectorAll('section[data-layer]')];
+secs.forEach(s => { const a = document.createElement('a'); a.href = '#' + s.id; a.textContent = s.dataset.title || s.id; nav.appendChild(a); });
+const io = new IntersectionObserver(es => es.forEach(e => {
+  if (e.isIntersecting) nav.querySelectorAll('a').forEach(a => a.classList.toggle('active', a.hash === '#' + e.target.id));
+}), { rootMargin: '-20% 0px -70% 0px' });
+secs.forEach(s => io.observe(s));
+
+// .stepper: Back/Next through .step children; data-hl="id,id" highlights SVG elements in the same stepper
+document.querySelectorAll('.stepper').forEach(st => {
+  const steps = [...st.querySelectorAll('.step')]; let i = 0;
+  const ctrl = document.createElement('div'); ctrl.className = 'ctrl';
+  ctrl.innerHTML = '<button data-d="-1">◀ Back</button><button data-d="1">Next ▶</button> <span></span>';
+  st.prepend(ctrl);
+  const show = () => {
+    steps.forEach((s, j) => s.classList.toggle('on', j === i));
+    st.querySelectorAll('.hl').forEach(e => e.classList.remove('hl'));
+    (steps[i].dataset.hl || '').split(',').filter(Boolean).forEach(id => st.querySelector('#' + id)?.classList.add('hl'));
+    st.querySelectorAll('[data-at]').forEach(e => e.style.display = e.dataset.at.split(',').includes(String(i)) ? '' : 'none');
+    ctrl.querySelector('span').textContent = `step ${i + 1}/${steps.length}`;
+  };
+  ctrl.addEventListener('click', e => { const d = +e.target.dataset.d; if (d) { i = Math.max(0, Math.min(steps.length - 1, i + d)); show(); } });
+  show();
+});
+
+// .toggle: buttons with data-show switch .pane[data-pane] (and any [data-when] SVG groups) inside the same .toggle
+document.querySelectorAll('.toggle').forEach(t => {
+  const pick = k => {
+    t.querySelectorAll('button[data-show]').forEach(b => b.classList.toggle('active', b.dataset.show === k));
+    t.querySelectorAll('.pane').forEach(p => p.classList.toggle('on', p.dataset.pane === k));
+    t.querySelectorAll('[data-when]').forEach(g => g.style.display = g.dataset.when.split(',').includes(k) ? '' : 'none');
+  };
+  t.addEventListener('click', e => { if (e.target.dataset.show) pick(e.target.dataset.show); });
+  const first = t.querySelector('button[data-show]'); if (first) pick(first.dataset.show);
+});
+</script>
+</body>
+</html>
