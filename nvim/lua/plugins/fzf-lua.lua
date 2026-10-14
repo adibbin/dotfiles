@@ -8,6 +8,7 @@ end
 map('n', '<leader><space>', fzf.files, 'Find Files')
 map('n', '<leader>/', fzf.live_grep, 'Grep')
 map('n', '<leader>gg', fzf.git_status, 'Git Status')
+map('n', '<leader>gL', fzf.git_commits, 'Git Log')
 map('n', 'gA', fzf.lsp_references, 'All references')
 map('n', 'gI', fzf.lsp_implementations, 'Go to Implementation')
 map('n', 'gs', fzf.lsp_document_symbols, 'Symbols in File')
