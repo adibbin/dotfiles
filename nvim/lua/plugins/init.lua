@@ -1,5 +1,6 @@
 vim.pack.add({
 	"https://github.com/catppuccin/nvim",
+	"https://github.com/folke/snacks.nvim",
 	"https://github.com/ibhagwan/fzf-lua",
 	"https://github.com/lewis6991/gitsigns.nvim",
 	"https://github.com/nvim-tree/nvim-web-devicons",
@@ -15,4 +16,5 @@ require("plugins.conform")
 require("plugins.fzf-lua")
 require("plugins.gitsigns")
 require("plugins.lsp")
+require("plugins.snacks")
 require("plugins.treesitter")
