@@ -15,7 +15,7 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # Aliases
-alias dot="cd ~/dotfiles && nvim"
+alias dot="cd ~/Developer/dotfiles && nvim"
 alias gitroot='cd $(git rev-parse --show-toplevel)'
 alias ha='TERM=xterm-256color ssh homeassistant'
 alias reload="source ~/.zshrc"

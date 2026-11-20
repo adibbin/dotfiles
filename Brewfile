@@ -59,7 +59,6 @@ brew "neovim"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
 # AI coding agent, built for the terminal
-brew "opencode"
 # Fast, disk space efficient package manager
 brew "pnpm"
 # Service monitoring system and time series database

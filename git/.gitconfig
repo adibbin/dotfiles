@@ -12,7 +12,7 @@
 	verbose = true
 
 [core]
-	excludesfile = ~/dotfiles/git/.gitignore
+	excludesfile = ~/Developer/dotfiles/git/.gitignore
 	fsmonitor = true
 	untrackedCache = true
 

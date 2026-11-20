@@ -1,7 +1,8 @@
 #!/bin/bash
 
-DOTFILES_CLAUDE="$HOME/dotfiles/claude"
+DOTFILES_CLAUDE="$HOME/Developer/dotfiles/claude"
 CLAUDE="$HOME/.claude"
+SKILLS_REPO="$HOME/Developer/skills/skills"
 
 mkdir -p "$CLAUDE"
 
@@ -9,13 +10,13 @@ mkdir -p "$CLAUDE"
 if [ -L "$CLAUDE/skills" ]; then
 	echo "Claude skills symlink already exists ✅"
 elif [ -d "$CLAUDE/skills" ]; then
-	echo "Moving existing skills into dotfiles..."
-	cp -r "$CLAUDE/skills/." "$DOTFILES_CLAUDE/skills/"
+	echo "Moving existing skills into skills repo..."
+	cp -r "$CLAUDE/skills/." "$SKILLS_REPO/"
 	rm -rf "$CLAUDE/skills"
-	ln -s "$DOTFILES_CLAUDE/skills" "$CLAUDE/skills"
+	ln -s "$SKILLS_REPO" "$CLAUDE/skills"
 	echo "Claude skills symlinked ✅"
 else
-	ln -s "$DOTFILES_CLAUDE/skills" "$CLAUDE/skills"
+	ln -s "$SKILLS_REPO" "$CLAUDE/skills"
 	echo "Claude skills symlinked ✅"
 fi
 

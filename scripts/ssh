@@ -1,7 +1,7 @@
 #!/bin/bash
 
 SSH_DIR="$HOME/.ssh"
-DOTFILES_SSH="$HOME/dotfiles/ssh"
+DOTFILES_SSH="$HOME/Developer/dotfiles/ssh"
 
 mkdir -p "$SSH_DIR"
 chmod 700 "$SSH_DIR"
