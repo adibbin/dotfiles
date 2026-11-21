@@ -1,6 +1,6 @@
 vim.pack.add({
-	"https://github.com/catppuccin/nvim",
 	"https://github.com/folke/snacks.nvim",
+	"https://github.com/folke/which-key.nvim",
 	"https://github.com/ibhagwan/fzf-lua",
 	"https://github.com/lewis6991/gitsigns.nvim",
 	"https://github.com/nvim-tree/nvim-web-devicons",
@@ -8,6 +8,7 @@ vim.pack.add({
 	"https://github.com/saghen/blink.cmp",
 	"https://github.com/saghen/blink.lib",
 	"https://github.com/stevearc/conform.nvim",
+	"https://github.com/catppuccin/nvim",
 })
 
 require("plugins.blink")
