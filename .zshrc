@@ -1,7 +1,5 @@
 export XDG_CONFIG_HOME="$HOME/.config"
 
-export GIT_CONFIG_GLOBAL="$XDG_CONFIG_HOME/git/.gitconfig"
-
 export EDITOR='nvim'
 
 # Oh My Zsh Configuration
